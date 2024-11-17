@@ -1,5 +1,8 @@
-numbers = [2, -93, -2, 8, None, -44, -1, -85, -14, 90, -22, -90, -100, -8, 38, -92, -45, 67, 53, 25]
-del numbers[4]
-sred=sum(numbers)/len(numbers)
-numbers.insert(4,sred)
-print(numbers)
+volume_of_disk_in_megabytes = 1.44
+volume_of_disk_in_bytes = volume_of_disk_in_megabytes*1024*1024
+number_of_lists_in_books = 100
+number_of_strings = 50
+number_of_symbols = 25
+number_of_bytes_foe_one_symbol = 4
+number_of_books = int(volume_of_disk_in_bytes//(number_of_lists_in_books*number_of_strings*number_of_symbols*number_of_bytes_foe_one_symbol))
+print('Количество книг, помещающихся на дискету:', number_of_books)
